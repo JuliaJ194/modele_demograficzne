@@ -3,90 +3,6 @@
 
 # # PROJEKT RÓWNANIA RÓŻNICZKOWE W TECHNICE - MODELE DEMOGRAFICZNE
 
-# Nasz projekt dotyczy modeli demograficznych. Wybraliśmy 3 równania, które opisują zmianę liczby ludności w danym okresie, są to: model Malthusa, model Verhulsta oraz równanie bilansu. Będziemy porównywać je ze sobą, a punktem odniesienia będą przewidywania naukowców ze strony www.population.un.org. Predykcje będą dotyczyć ludności w Polsce. Opiszemy również inne modele używane przy analizie zmiany liczności populacji różnych gatunków np. bakterii lub zwierząt. Na wstępie chcielibyśmy przybliżyć, co to demografia oraz czym się zajmuje i od czego zależy. 
-# 
-
-# ### Demografia
-
-# Demografia to nauka o populacjach ludzkich i ich badanie, przede wszystkim pod kątem ich wielkości, struktury i rozwoju. Na podstawie wszelkich badań demografowie są w stanie oszacować liczbę populacji do roku 2100.
-# 
-
-# Mówiąc ogólnie, demografia to badanie cech populacji. Zawiera matematyczny opis tego, jak te cechy zmieniają się w czasie. Dane demograficzne mogą obejmować wszelkie czynniki statystyczne, które wpływają na wzrost lub spadek populacji, ale kilka parametrów jest szczególnie ważnych: wielkość populacji, gęstość, struktura wieku, płodność (wskaźniki urodzeń), śmiertelność (współczynniki zgonów) i stosunek płci.
-
-# Jednym z najwcześniejszych badań demograficznych w okresie nowożytnym były Natural and Political Observations Made on the Bills of Mortality (1662) autorstwa Johna Graunta, które zawiera prymitywną formę tabeli życia. Wśród wyników badania było to, że jedna trzecia dzieci w Londynie zmarła przed szesnastymi urodzinami. Matematycy, tacy jak Edmond Halley, opracowali tablicę życia jako podstawę matematyki ubezpieczeń na życie.
-# 
-
-# #### 4 fazy demografii
-
-# 4 fazowy model transformacji demograficznej jest opisem modelowym przejścia od wysokich do niskich współczynników śmiertelności i urodzeń oraz wynikającej z nich zmiany przyrostu naturalnego.
-
-# Faza I – przejawia się ona w państwach preindustrialnych (inaczej tradycyjnych)  które z wielu powodów nie mają dostępu do współczesnej medycyny, stąd też wskaźnik urodzeń i zgonów jest wysoki i są one do siebie zbliżone (Przyrost naturalny jest stosunkowo niski). Obecnie występuje tylko w nielicznych populacjach. Współczynnik dzietności wynosi powyżej 6, a przeciętna długość życia wynosi od 35 do 45 lat. 
-# 
-# Faza II – Państwa z podstawowym dostępem do medycyny i do produkcji żywności. Poziom zgonów zmniejszył się, lecz poziom urodzeń dalej utrzymuje się na wysokim poziomie, co prowadzi do wysokiego przyrostu naturalnego i tzw. eksplozji demograficznej. Średnia długość życia to 60 lat, większość społeczeństwa jest młoda.
-# 
-# Faza III – tzw. przejście demograficzne – okres przejściowy, charakterystyczny dla krajów rozwijających się. Współczynnik urodzeń i zgonów nieznacznie spada, oraz wzrasta średnia długości życia do ponad 70 lat. Faza III charakteryzuje państwa o wzrastającej zamożności społeczeństwa.
-# 
-# Faza IV – występuje w krajach wysoko rozwiniętych. Średnia długość życia społeczeństwa wydłuża się do 85 lat, a płodność jest bardzo niska, co skutkuje małym, aczkolwiek stabilnym przyrostem naturalnym. 
-# 
-
-# #### Przyszłe trendy populacyjne 
-
-# Z danych z roku 2017 przewiduje się, że światowa populacja osiągnie 9,8 miliarda w 2050 roku i 11,2 miliarda w 2100 roku.
-# 
-# Szacuje się, że duża część przyrostu wystąpi w Afryce (Nigeria ma stać się państwem bardziej zaludnionym od Stanów Zjednoczonych), a populacja Indii, która jest na drugim miejscu pod względem ludności, ma przewyższyć Chiny za kilka lat (dotychczas 1. miejsce). W Afryce, Azji (z wyłączeniem Japonii, Australii i Nowej Zelandii) i Ameryce Łacińskiej przewiduje się, że wielkość populacji wzrośnie do 7,9 miliarda do roku 2050. Z kolei w Europie przewiduje się, że wielkość populacji pozostanie praktycznie stabilna, nieznacznie zwiększając się. Różnica w trendach między tymi dwoma regiony świata odzwierciedlają późniejszy etap przemian na północy w porównaniu z południem.
-# 
-
-# ## Modele demograficzne
-
-# ### Model Malthusa
-
-# W 1798 roku ekonomista angielski Thomas Malthus sformułował teorię geometrycznego wzrostu ludności. Przy jednoczesnym założeniu arytmetycznego wzrostu produkcji żywności, teoria ta miała wyjaśnić przyczyny zubożenia ludności. 
-# Teoria ta bazuje na prostym założeniu, że przyrost populacji jest proporcjonalny do całkowitej liczby ludności. Stała $ \lambda $ jest współczynnikiem wzrostu populacji i często nazywana jest współczynnikiem Malthusa.
-# 
-# $ N'(t) = \lambda N(t). $
-# 
-# Model ten dobrze sprawdza przy dużych populacjach.
-# 
-# Model Malthusa dobrze opisuje wzrost populacji żyjącej w idealnie korzystnych warunkach, np. bakterie w laboratorium.
-
-# ### Model Verhulsta
-
-# W przypadku populacji żyjącej w środowisku o ograniczonych zasobach należy zmodyfikować model Malthusa w ten sposób, aby tempo wzrostu populacji malało wraz ze wzrostem jej wielkości. Taki model zaproponował w 1845 roku Verhulst.
-# 
-# Verhulst przyjął, że istnieje optymalna wielkość populacji żyjącej w danym środowisku, oznaczył ją przez $ K. $ Założył, że współczynnik wzrostu populacji maleje liniowo w stosunku do wielkości populacji. Przyjmując, że dla $ N = 0 $ wynosi on $ \lambda $, a dla $ N = K $ wynosi 0, otrzymujemy nowe równanie opisujące wielkość populacji.
-#  
-# $ N'(t) = \lambda N(t) \Big(1 - \dfrac{N(t)}{K} \Big). $
-# 
-# Model Verhulsta można uzasadnić, rozpatrując zależność między wielkością populacji $ N(t) $ , a ilością pożywienia $ P(t) . $ Przyjmujemy, że współczynnik wzrostu populacji jest proporcjonalny do ilości pożywienia, oraz że ilość pożywienia maleje proporcjonalnie do wielkości populacji. Mamy więc następujące zależności:
-# 
-# $ \dfrac{N'(t)}{N(t)} = aP(t), $
-# 
-# $P'(t) = -b N'(t). $
-# 
-# Wnioskujemy, że $ N'(t) = aN(t)P(t) $ oraz $ P(t) = M − bN(t) $ , gdzie $ M $ jest pewną stałą, a stąd
-# 
-# $ N'(t) = aN(t)\Big(M − bN(t)\Big). $
-# 
-# Podstawiając $ λ = aM $ i $ K = \dfrac{M}{b} $ otrzymujemy 
-# 
-# $ N'(t) = \lambda N(t) \Big(1 - \dfrac{N(t)}{K} \Big) .$
-# 
-
-# ### Równanie bilansu
-
-# Równanie bilansu dla pojedynczej populacji. Ilość osobników w populacji zależy od ilości urodzin i śmiertelności oraz imigracja i emigracja. Przyjmujemy, że $ B(t), D(t), E(t) $ i $ I(t) $ oznaczają odpowiednio, ilość urodzin (birth), śmierci (death), emigracji i imigracji w jednostce czasu.
-# 
-# $ N’(t) = B(t) − D(t) + I(t) − E(t). $
-# 
-# Inny sposób zapisu tego równania jest za pomocą współczynników per capita, czyli np. ilość urodzin przypadających na jednego osobnika wynosi $ b(t) = \dfrac{B(t)}{N(t)} . $ Ma wtedy ono postać
-# 
-# $ N’(t) = (b(t) − d(t) + i(t) − e(t)) N(t) . $
-# 
-# Problemem jest współczynnik $ i(t) $, ponieważ założenie, że imigracja jest proporcjonalna do ilości osobników nie ma sensu, zwłaszcza gdy rozważamy migrację na puste terytorium. Rozważymy zatem równanie
-# 
-# $ N’(t) = (b(t) − d(t) − e(t)) N(t) + I(t) . $
-# 
-
 # ## CZĘŚĆ BADAWCZA
 
 # W tej części będziemy badać jak zmieniała się liczność populacji w Polsce w latach 1950 - 2020 oraz w jaki sposób mogłaby się zmienić do 2100 roku. Użyjemy do tego modelu Malthusa, modelu Verhulsta oraz równania bilansu, a punktem odniesienia będą przewidywania naukowe. Sprawdzimy który z wybranych modeli jest najbardziej rzetelny. Przewidując w jaki sposób wzrośnie lub zmaleje liczba ludności w Polsce do 2100 roku, rozważymy dwie różne sytuacje oraz przekonamy się, czy któraś z nich pokrywa się lub jest bliska przewidywaniom naukowców.
@@ -110,8 +26,7 @@ warnings.filterwarnings('ignore')
 # In[2]:
 
 
-tabela = pd.read_csv(r'C:\Users\julia\Desktop\v\studia\semestr 3\równania różniczkowe  w technice\projekt\tabela.csv', 
-                     usecols=['Time', 'PopTotal', 'Location', 'Variant'], index_col='Time')
+tabela = pd.read_csv(r'tabela.csv', usecols=['Time', 'PopTotal', 'Location', 'Variant'], index_col='Time')
 
 tabela = tabela[(tabela.Location == 'Poland') & (tabela.Variant == 'Medium')]
 
@@ -124,7 +39,7 @@ tabela_pop = tabela.PopTotal * 1000
 tabela_pop[2100]
 
 
-# Poniżej przedstawiamy wykres opisujący przewidywania naukowców. Jak widać w przeciągu 80 lat populacja w naszym kraju ma zmaleć z obecnych 37,8 mln aż do 23 mln.
+# Poniżej wykres opisujący przewidywania naukowców. Jak widać w przeciągu 80 lat populacja w naszym kraju ma zmaleć z obecnych 37,8 mln aż do 23 mln.
 
 # In[4]:
 
@@ -142,39 +57,6 @@ plt.show()
 
 
 # ##### Model Malthusa
-
-# Aby skorzystać z modelu Malthusa musimy wyliczyć lambdę.
-# Weźmy  $ N_{0} $ równe liczbie ludności w 1950 roku. Weźmy także $ N_{70} $ równe liczbie ludności w 2020 roku.
-# 
-# $ N_{0} = 24824007 $
-# 
-# $ N_{70} = 37846605 $
-# 
-# $ N'(t) = \lambda N(t) $
-# 
-# $ N(t) = Ae ^ {\lambda t} $
-# 
-# $ N_{0} = N(0) = A = 24824007 $
-# 
-# $ N(t) = 24824007 \cdot e ^ {\lambda t} $
-# 
-# $ N_{70} = N(70) = 24824007 \cdot e ^ {\lambda 70} = 37846605 $
-# 
-# $ e ^ {\lambda 70} = 1.524596935539053 $
-# 
-# $ \lambda \cdot 70 = \ln (1,52459694) $
-# 
-# $ \lambda \cdot 70 = 0,42173 $
-# 
-# $ \lambda = 0,006 $
-
-# Pochodna $ N'(t) $ oznacza zmianę liczby ludności, a więc możemy ją inaczej zapisać jako $ N_{k} - N_{p} $, gdzie $ N_{k} $ oznacza końcową liczbę populacji, a $ N_{p} $ początkową liczbę populacji. Nasz model będzie zatem wyglądać następująco:
-# 
-# $ N_{k} - N_{p} = \lambda N_{p} $. 
-# 
-# Chcąc wyliczyć końcową liczbę ludności przekształcamy wzór i otrzymujemy:
-# 
-# $ N_{k} = N_{p} + \lambda N_{p}. $
 
 # In[5]:
 
@@ -250,7 +132,7 @@ for i in range(len(t)):
     x0 = x0 + h
 
 
-# Sprawdźmy na wykresie jak wyglądają nasze funkcje oraz czy czymś się różnią.
+# Sprawdźmy na wykresie jak wygląda porównanie naszych funkcji.
 
 # In[9]:
 
@@ -274,25 +156,6 @@ plt.show()
 # Jak widać wybranie metody rozwiązania równania Malthusa nie ma wpływu na wynik, ponieważ wykresy pokrywają się.
 # Dlatego w dalszej części projektu wybieramy tylko jedną z nich.
 
-# ##### Model Verhulsta
-
-# Biorąc równanie modelu Verhulsta wyprowadzone na wykładzie mamy 
-# 
-# $ N(t) = \dfrac{1}{\frac{1}{K}-\Big(\frac{1}{N_0} - \frac{1}{K}\Big)e^{-\lambda t}}. $
-# 
-# Przyjmujemy, że $ N_0 = 24624007 $ oraz $ K = 38567868. $ 
-# 
-# Po przekształceniu dostajemy wzór na lambde równy 
-# 
-# $ \lambda = \dfrac{- \ln{\Big( \frac{\frac{1}{N} - \frac{1}{K}} {\frac{1}{N_0} - \frac{1}{K}}\Big)}}{t}. $ 
-# 
-# Weźmy punkt $ (50, N(50)) . $
-# 
-# Otrzymujemy lambde równą $ \lambda = 0,1516. $ 
-
-# Analogicznie do przekształceń przy modelu Malthusa, otrzymujemy wzór na końcową liczbę populacji:
-# 
-# $ N_{k} = \dfrac{1}{\frac{1}{K}-\Big(\frac{1}{y_0} - \frac{1}{K}\Big)e^{-\lambda t}}. $
 
 # In[10]:
 
@@ -499,16 +362,6 @@ plt.show()
 
 # ##### Symulacja 1
 
-# Naszą pierwszą sytuacją, która mogłaby zaistnieć i znacząco wpłynąć na zmianę liczby ludności jest rozwój obecnej pandemii koronawirusa. Założenia, które przyjmujemy to:
-# 
-# -niewielkie zmniejszenie liczby żywych urodzeń,
-# 
-# -duży wzrost zgonów,
-# 
-# -spory spadek migracji w kraju z powodu ograniczeń przemieszczania.
-# 
-# Zakładamy, że koronawirus zmutował oraz jest odporny na wszelkie szczepionki. Coraz więcej ludzi umiera, jest także coraz mniej żywych urodzeń. Dopiero po czasie u ludzi wytwarzają się przeciwciała i krzywa opisująca zgony nie rośnie już tak gwałtownie, a krzywa przedstawiająca żywe urodzenia wypłaszcza się. Obostrzenia są jednak coraz większe. Rząd chce uniknąć możliwej kolejnej mutacji wirusa, dlatego zamyka granice. Ludzie mogą wyjeżdżać i przyjeżdżać do naszego kraju tylko w szczególnych przypadkach, dlatego migracje spadają w gwałtownym tempie praktycznie do zera. 
-
 # Zdefiniujemy teraz funkcję dla każdego współczynnika w taki sposób, aby zgadzało się to z naszymi założeniami. Sprawdzimy również jak będzie to wyglądać na wykresie.
 
 # In[24]:
@@ -712,18 +565,6 @@ plt.show()
 
 # ##### Symulacja 2
 
-# Drugą naszą symulacją jest Polska jako potęga gospodarcza na świecie. Założenia, które przyjmujemy to:
-# 
-# -zmniejszenie liczby zgonów,
-# 
-# -niewielki wzrost żywych urodzeń,
-# 
-# -duży wzrost imigracji,
-# 
-# -spory spadek emigracji.
-# 
-# Załóżmy, że Polska stała się na tyle silna, że nie jest ona zależna od nikogo. Koncerny farmaceutyczne stworzyły lek na raka, stąd spadek liczby zgonów w Polsce w następnych latach, a ludzie coraz chętniej zakładają rodzinę z powodu dobrych warunków do życia (wzrost liczby urodzeń na przestrzeni lat). Imigracja przybywa, natomiast emigracja spada, ponieważ ludzie nie chcą opuszczać tak wspaniałego i potężnego państwa. 
-# 
 # Definiowanie funkcji oraz rozwiązanie równania bilansu odbywa się analogicznie do symulacji 1.
 
 # In[31]:
@@ -1041,15 +882,3 @@ porównanie3(2020,2100)
 # Z wykresu możemy odczytać, że tylko model Verhulsta zakłada, że liczba ludności w Polsce do 2100 roku pozostanie stabilna. Model Malthusa oraz symulacja 2 pokazują, że liczba ludności mogłaby drastycznie wzrosnąć. Natomiast symulacja 1 oraz przewidywania naukowe mówią, że populacja w naszym kraju zmaleje. Nie możemy przewidzieć jak sytuacja w naszym kraju zmieni się w przeciągu najbliższych 80 lat, więc wszystkie te funkcje są jedynie spekulacjami. Biorąc jednak za punkt odniesienia przewidywania naukowców możemy wywnioskować, że najlepiej sprawdza się tutaj równanie bilansu z naszymi założeniami. 
 # Do obecnego roku również najlepiej poradził sobie ten model. Dzieje się tak dlatego, że uwzględnia on wszystkie rzeczywiste czynniki wpływające na zmianę liczby ludności. Model Verhulsta i Malthusa nie bierze pod uwagę tych czynników, dlatego wyniki nie są tak rzetelne oraz znacząco odbiegają od prawdy. 
 
-# Proste modele demograficzne, przyjmując idealne warunki, dobrze oddają rzeczywistość i sprawdzą się przy badaniu populacji hermetycznej np. bakteri w laboratorium. W przypadku bardziej złożonym lepiej jest wybrać model uwzględniający czynniki zależne od czasu i mające największy wpływ na zmianę liczby ludności. 
-
-# ## BIBLIOGRAFIA
-
-# 1. https://www.un.org/development/desa/en/news/population/world-population-prospects-2017.html
-# 2. http://www.sbc.org.pl/Content/73454/SE_98.pdf
-# 3. The Demographic Transition and the Sexual Division of Labor, https://www.nber.org/system/files/working_papers/w12838/w12838.pdf
-# 5. International Union for the Scientific Study of Population https://iussp.org/en
-# 6. https://iussp.org/en/what-demography-jacques-vallin
-# 7. przewidywania naukowców - www.population.un.org
-# 8. "Dynamika populacji" Ryszard Rudnicki
-# 9. https://ec.europa.eu/
