@@ -1,6 +1,7 @@
 Projekt dotyczy modeli demograficznych. Wybraliśmy 3 równania, które opisują zmianę liczby ludności w danym okresie, są to: model Malthusa, model Verhulsta oraz równanie bilansu. Będziemy porównywać je ze sobą, a punktem odniesienia będą przewidywania naukowców ze strony www.population.un.org. Predykcje będą dotyczyć ludności w Polsce.
 
 Symulacja 1
+
 Pierwszą sytuacją, która mogłaby zaistnieć i znacząco wpłynąć na zmianę liczby ludności jest rozwój obecnej pandemii koronawirusa. Założenia, które przyjmujemy to:
 -niewielkie zmniejszenie liczby żywych urodzeń,
 -duży wzrost zgonów,
@@ -8,6 +9,7 @@ Pierwszą sytuacją, która mogłaby zaistnieć i znacząco wpłynąć na zmian�
 Zakładamy, że koronawirus zmutował oraz jest odporny na wszelkie szczepionki. Coraz więcej ludzi umiera, jest także coraz mniej żywych urodzeń. Dopiero po czasie u ludzi wytwarzają się przeciwciała i krzywa opisująca zgony nie rośnie już tak gwałtownie, a krzywa przedstawiająca żywe urodzenia wypłaszcza się. Obostrzenia są jednak coraz większe. Rząd chce uniknąć możliwej kolejnej mutacji wirusa, dlatego zamyka granice. Ludzie mogą wyjeżdżać i przyjeżdżać do naszego kraju tylko w szczególnych przypadkach, dlatego migracje spadają w gwałtownym tempie praktycznie do zera.
 
 Symulacja 2
+
 Drugą symulacją jest Polska jako potęga gospodarcza na świecie. Założenia, które przyjmujemy to:
 -zmniejszenie liczby zgonów,
 -niewielki wzrost żywych urodzeń,
